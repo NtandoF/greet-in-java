@@ -2,8 +2,8 @@ package greet;
 
     public class Greet {
 
-        private final LanguageType language;
-        private final String name;
+        private LanguageType language;
+        private String name;
 
     public Greet (LanguageType language, String name){
         this.name = name;
@@ -11,7 +11,10 @@ package greet;
 
     }
 
-    public String greetPerson () {
+        public Greet() {
+        }
+
+        public String greetPerson () {
 
         if (language == LanguageType.English) {
             return "Hello, " + name;
