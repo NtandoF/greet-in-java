@@ -1,19 +1,45 @@
 package greet;
 import java.util.*;
-import greet.Greet;
 
 public class Greeted extends Greet {
-    HashMap<Integer, String> greetedUsers = new HashMap<Integer, String>();
+    HashMap<String, Integer> greetedUsers=new HashMap<String, Integer>();
 
-    public void greetCounter(String name) {
+    public void greeted(String name) {
 
         if (greetedUsers.containsKey(name)) {
-            greetedUsers.put(Integer.valueOf(greetedUsers.get(name) + 1), name);
+            greetedUsers.put(name, greetedUsers.get(name) + 1);
+
         }
-        else(){
-            greetedUsers
+        else {
+            greetedUsers.put(name, 1);
         }
     }
+
+    public int counter(){
+      return greetedUsers.size();
+    }
+
+    public int counterForUser(String name){
+        int counterUser = 0;
+
+        if (greetedUsers.containsKey(name)){
+            counterUser = greetedUsers.get(name);
+        }
+
+        else {
+
+        }
+        return counterUser;
+    }
+
+    public int clearUser(String name){
+        return greetedUsers.remove(name);
+    }
+
+    public int clearUsers(){
+        return greetedUsers.clear();
+    }
+
 
 }
 
