@@ -1,8 +1,6 @@
-package greet;
+package net.greet;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -38,16 +36,29 @@ class GreetedTest {
     public void shouldRemoveOneUser() {
 
         Greeted greeted = new Greeted();
+        greeted.greeted("Leyo");
+        greeted.greeted("Leyo");
+        greeted.greeted("Leyo");
+        greeted.greeted("Leyo");
+        greeted.greeted("Ntando");
+
+
+        assertEquals(greeted.clearUser("Leyo"), 4);
+        System.out.println(greeted.counter());
+    }
+    @Test
+    public void shouldRemoveAllUsers() {
+
+        Greeted greeted = new Greeted();
         greeted.greeted("tido");
         greeted.greeted("tido");
         greeted.greeted("tido");
         greeted.greeted("Thabang");
         greeted.greeted("Ntando");
 
+        assertEquals(greeted.counter(), 3);
+        greeted.clearUsers();
+        assertEquals(greeted.counter(), 0);
 
-        assertEquals(greeted.clearUser("tido"), 3);
     }
-
-
-
 }

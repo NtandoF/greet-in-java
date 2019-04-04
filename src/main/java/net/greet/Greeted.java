@@ -1,7 +1,7 @@
-package greet;
+package net.greet;
 import java.util.*;
 
-public class Greeted extends Greet {
+public class Greeted {
     HashMap<String, Integer> greetedUsers=new HashMap<String, Integer>();
 
     public void greeted(String name) {
@@ -36,10 +36,9 @@ public class Greeted extends Greet {
         return greetedUsers.remove(name);
     }
 
-    public int clearUsers(){
-        return greetedUsers.clear();
+    public void clearUsers(){
+       greetedUsers.clear();
     }
-
 
 }
 
