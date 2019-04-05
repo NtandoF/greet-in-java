@@ -1,9 +1,9 @@
 package net.greet;
 
 public enum LanguageType {
-    English("Hello"),
-    Xhosa("Molo"),
-    Afrikaans("Goeie dag");
+    english("Hello"),
+    xhosa("Molo"),
+    afrikaans("Goeie dag");
 
 
     private final String lang;
@@ -12,8 +12,8 @@ public enum LanguageType {
         this.lang = expression;
     }
 
-    public String getLang() {
-        return this.lang;
+    public String getLang(String name) {
+        return this.lang + name;
     }
 
 }

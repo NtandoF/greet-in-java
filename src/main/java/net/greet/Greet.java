@@ -28,25 +28,30 @@ public class Greet {
     }
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Hello please enter your name");
-        String name = input.next();
-        Greet message = new Greet("English", name);
-        Greeted counter = new Greeted();
 
+        while (true) {
 
-        message.greetPerson();
-        counter.greeted(name);
-        counter.counter();
+            Scanner input = new Scanner(System.in);
+            System.out.println("");
+            System.out.println("**************************************");
+            System.out.println("Please enter your name :");
+            String name = input.next();
+            System.out.println("");
+            System.out.println("Please enter lang :");
+            String language = input.next();
+            System.out.println("");
+            System.out.println(LanguageType.valueOf(language).getLang(" " + name));
+//
+//            if (!"exit".equals(name)){
+//                break;
+//            }
 
-
-        System.out.println( message.greetPerson());
-        System.out.println( counter.counterForUser(name));
-
+         }
+      }
 
     }
 
-}
+
 
 
 
