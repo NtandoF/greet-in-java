@@ -51,6 +51,14 @@ public class Greet {
             else if (index[0].equalsIgnoreCase("greeted") && index.length == 1) {
                 inner.greetedNames();
             }
+            else if (index[0].equalsIgnoreCase("clear") && index.length == 1) {
+                inner.clearUsers();
+            }
+            else if (index[0].equalsIgnoreCase("clearUser") && index.length == 2) {
+//                String user = index[1];
+//                inner.greeted(user);
+                inner.clearUser(index[1]);
+            }
 
 
             else {
