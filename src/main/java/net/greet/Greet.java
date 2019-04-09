@@ -28,28 +28,39 @@ public class Greet {
     }
 
     public static void main(String[] args) {
+        System.out.println("******Welcome to the greetings app********");
+
+        Greeted inner = new Greeted();
 
         while (true) {
 
             Scanner input = new Scanner(System.in);
-            System.out.println("");
-            System.out.println("**************************************");
-            System.out.println("Please enter your name :");
-            String name = input.next();
-            System.out.println("");
-            System.out.println("Please enter lang :");
-            String language = input.next();
-            System.out.println("");
-            System.out.println(LanguageType.valueOf(language).getLang(" " + name));
-//
-//            if (!"exit".equals(name)){
-//                break;
-//            }
+            System.out.println("Enter command :");
+            String name = input.nextLine();
+            String [] index = name.split(" ");
+
+            if (index[0].equalsIgnoreCase("greet") && index.length == 3) {
+                String user = index[1];
+                inner.greeted(user);
+                String language = index[2];
+                System.out.println(LanguageType.valueOf(language).getLang(" " + user));
+            }
+            else if (index[0].equalsIgnoreCase("counter") && index.length == 1) {
+                inner.counter();
+            }
+            else if (index[0].equalsIgnoreCase("greeted") && index.length == 1) {
+                inner.greetedNames();
+            }
+
+
+            else {
+                System.out.println("Enter a valid command");
+            }
 
          }
       }
 
-    }
+ }
 
 
 
