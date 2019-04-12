@@ -31,9 +31,8 @@ public class Greeted {
         return counterUser;
     }
 
-    public void counter(){
-        System.out.println(count= greetedUsers.size());
-       // return count = greetedUsers.size();
+    public int counter(){
+        return count = greetedUsers.size();
     }
 
 
@@ -41,11 +40,30 @@ public class Greeted {
         return greetedUsers.remove(name);
     }
 
+
     public void clearUsers(){
        greetedUsers.clear();
     }
+
+    public void help(){
+        System.out.println(" Valid commands that you can use:\n" +
+                "        greet followed by your name and prefered language.\n" +
+                "        greeted to view all the people greeted.\n" +
+                "        counter to view how many people greeted. \n" +
+                "        counterUser to view how many times one person as been greeted. \n" +
+                "        clearUser to remove one person. \n" +
+                "        clearUsers to clear all people entered.");
+    }
+
+    public void exit(){
+        System.exit(1);
+    }
+
+
     public void greetedNames(){
         System.out.println(greetedUsers);
+
+
     }
 }
 

@@ -47,6 +47,7 @@ public class Greet {
             }
             else if (index[0].equalsIgnoreCase("counter") && index.length == 1) {
                 inner.counter();
+                System.out.println(inner.counter());
             }
             else if (index[0].equalsIgnoreCase("greeted") && index.length == 1) {
                 inner.greetedNames();
@@ -55,14 +56,17 @@ public class Greet {
                 inner.clearUsers();
             }
             else if (index[0].equalsIgnoreCase("clearUser") && index.length == 2) {
-//                String user = index[1];
-//                inner.greeted(user);
                 inner.clearUser(index[1]);
             }
-
+            else if (index[0].equalsIgnoreCase("help") && index.length == 1) {
+                inner.help();
+            }
+            else if (index[0].equalsIgnoreCase("exit") && index.length == 1) {
+                inner.exit();
+            }
 
             else {
-                System.out.println("Enter a valid command");
+                System.out.println("Enter help to view valid commands!");
             }
 
          }

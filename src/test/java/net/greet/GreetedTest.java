@@ -7,16 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class GreetedTest {
 
     @Test
-   public void shouldReturnTheCorrectNumOfUsersGreeted() {
+    public void shouldReturnTheCorrectNumOfUsersGreeted() {
 
-            Greeted greeted = new Greeted();
-            greeted.greeted("tido");
-            greeted.greeted("Thabang");
-            greeted.greeted("Ntando");
-            greeted.greeted("Zuma");
+        Greeted greeted = new Greeted();
+        greeted.greeted("tido");
+        greeted.greeted("Thabang");
+        greeted.greeted("Ntando");
+        greeted.greeted("Zuma");
 
-           // assertEquals(greeted.counter(), 4);
-            }
+        // assertEquals(greeted.counter(), 4);
+    }
 
     @Test
     public void shouldReturnTheCorrectNumForOneUserGreeted() {
@@ -46,6 +46,7 @@ class GreetedTest {
         assertEquals(greeted.clearUser("Leyo"), 4);
         greeted.counter();
     }
+
     @Test
     public void shouldRemoveAllUsers() {
 
@@ -56,9 +57,11 @@ class GreetedTest {
         greeted.greeted("Thabang");
         greeted.greeted("Ntando");
 
-      //  assertEquals(greeted.counter(), 3);
+        assertEquals(greeted.counter(), 3);
         greeted.clearUsers();
-      //  assertEquals(greeted.counter(), 0);
+        assertEquals(greeted.counter(), 0);
 
     }
 }
+
+
