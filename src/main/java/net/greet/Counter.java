@@ -7,5 +7,6 @@ public interface Counter {
     public int counter();
     public int clearUser(String name);
     public void clearUsers();
+    public void greetedNames();
 
 }

@@ -30,7 +30,8 @@ public class Greet {
     public static void main(String[] args) {
         System.out.println("******Welcome to the greetings app********");
 
-        Greeted inner = new Greeted();
+//       Greeted inner = new Greeted();
+        Greeted_jdbc inner = new Greeted_jdbc();
 
         while (true) {
 
@@ -50,7 +51,7 @@ public class Greet {
                 System.out.println(inner.counter());
             }
             else if (index[0].equalsIgnoreCase("greeted") && index.length == 1) {
-                inner.greetedNames();
+              inner.greetedNames();
             }
             else if (index[0].equalsIgnoreCase("clear") && index.length == 1) {
                 inner.clearUsers();
@@ -59,10 +60,10 @@ public class Greet {
                 inner.clearUser(index[1]);
             }
             else if (index[0].equalsIgnoreCase("help") && index.length == 1) {
-                inner.help();
+//               inner.help();
             }
             else if (index[0].equalsIgnoreCase("exit") && index.length == 1) {
-                inner.exit();
+//                inner.exit();
             }
 
             else {
