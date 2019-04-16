@@ -2,12 +2,14 @@ package net.greet;
 
 import java.sql.*;
 
+import static java.sql.DriverManager.getConnection;
+
 public class Greeted_jdbc implements Counter {
     final String INSERT_USERS_SQL = "insert into users (name, counter) values(?, ?)";
 
     final String FIND_USERS_SQL = "select counter from users where name = ?";
 
-    final String UPDATE_USERS_SQL = "update users set counter = ? where name = ?";
+    final String UPDATE_USERS_SQL = "update users set counter = counter + 1 where name = ?";
 
 
     Connection conn;
@@ -17,8 +19,7 @@ public class Greeted_jdbc implements Counter {
 
     public Greeted_jdbc() {
         try {
-            conn = DriverManager.
-                    getConnection("jdbc:h2:./target/greetings_db","sa", "");
+            conn = getConnection("jdbc:h2:./target/greetings_db","sa", "");
             psCreateNewUsers = conn.prepareStatement(INSERT_USERS_SQL);
             psFindUsers = conn.prepareStatement(FIND_USERS_SQL);
             psUpdateUsersCount = conn.prepareStatement(UPDATE_USERS_SQL);
@@ -26,6 +27,21 @@ public class Greeted_jdbc implements Counter {
         } catch(Exception ex) {
             ex.printStackTrace();
         }
+    }
+    @Override
+    public void greetedNames() {
+        try {
+            PreparedStatement vp = conn.prepareStatement("select * from users");
+            ResultSet rs = vp.executeQuery();
+
+            while(rs.next()){
+                System.out.println( rs.getString("name") + " count:" + rs.getInt("counter"));
+                ;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -47,7 +63,7 @@ public class Greeted_jdbc implements Counter {
         try {
             psFindUsers.setString(1, name);
             ResultSet rsname = psFindUsers.executeQuery();
-            if (!rsname.next()) {
+            if (!rsname.next() == false) {
                 System.out.println("no count for " + name);
 
                 psCreateNewUsers.setString(1, rsname.toString());
@@ -57,7 +73,7 @@ public class Greeted_jdbc implements Counter {
             } else {
                 int Count = rsname.getInt("counter");
                 psUpdateUsersCount.setInt(1, ++Count);
-                psUpdateUsersCount.setString(2, rsname.toString());
+                psUpdateUsersCount.setString(1, rsname.getString("name"));
                 psUpdateUsersCount.execute();
             }
 
@@ -78,7 +94,6 @@ public class Greeted_jdbc implements Counter {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-        // if this pet wasn't greeted yet
         return 0;
     }
 
@@ -91,22 +106,18 @@ public class Greeted_jdbc implements Counter {
 
     @Override
     public void clearUsers() {
-
-    }
-
-    @Override
-    public void greetedNames() {
-        try {
-            PreparedStatement vp = conn.prepareStatement("select * from users");
-            ResultSet rs = vp.executeQuery();
-
-            while(rs.next()){
-                System.out.println( rs.getString("name") + " count:" + rs.getInt("counter"));
-               ;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+//            try {
+//                try(Connection conn = (Connection) getConnection()) {
+//
+//                    Statement statement = conn.createStatement();
+//                    statement.addBatch("delete from fruit where name in ('Guava', 'Orange')");
+//
+//                    statement.executeBatch();
+//
+//                }
+//            } catch(Exception ex) {
+//                System.out.println("These test will fail until the fruit table is created: " + ex);
+//            }
         }
-
-    }
 }
+

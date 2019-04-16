@@ -1,6 +1,0 @@
-2019-04-15 15:08:45 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Ntando"; SQL statement:
-select counter from users where name = ? [22018-199]
-2019-04-15 15:08:45 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Ntando"; SQL statement:
-select counter from users where name = ? [22018-199]

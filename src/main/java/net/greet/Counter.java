@@ -2,11 +2,11 @@ package net.greet;
 
 public interface Counter {
 
-    public void greeted(String name);
-    public int counterForUser(String name);
-    public int counter();
-    public int clearUser(String name);
-    public void clearUsers();
-    public void greetedNames();
+     void greeted(String name);
+     int counterForUser(String name);
+     int counter();
+     int clearUser(String name);
+     void clearUsers();
+     void greetedNames();
 
 }
