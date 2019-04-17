@@ -1,5 +1,6 @@
 package net.greet;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Greet {
@@ -30,7 +31,7 @@ public class Greet {
     public static void main(String[] args) {
         System.out.println("******Welcome to the greetings app********");
 
-//       Greeted inner = new Greeted();
+//          Greeted inner = new Greeted();
         Greeted_jdbc inner = new Greeted_jdbc();
 
         while (true) {
@@ -42,7 +43,7 @@ public class Greet {
 
             if (index[0].equalsIgnoreCase("greet") && index.length == 3) {
                 String user = index[1];
-                inner.greeted(user);
+                inner.userUpdateOrCreate(user);
                 String language = index[2];
                 System.out.println(LanguageType.valueOf(language).getLang(" " + user));
             }
@@ -51,7 +52,19 @@ public class Greet {
                 System.out.println(inner.counter());
             }
             else if (index[0].equalsIgnoreCase("greeted") && index.length == 1) {
-              inner.greetedNames();
+                try {
+                    System.out.println(inner.findAllUsers());
+                } catch (SQLException e) {
+                    System.out.println("Failed to find all users: " + e);
+                }
+            }
+            else if (index[0].equalsIgnoreCase("greeted") && index.length == 2) {
+                try {
+//                    System.out.println(inner.findUser(index[1]));
+                    System.out.println(index[1] + " have been greeted " + inner.findUser(index[1]).get(index[1]));
+                } catch (SQLException e) {
+                    System.out.println("Failed to find all users: " + e);
+                }
             }
             else if (index[0].equalsIgnoreCase("clear") && index.length == 1) {
                 inner.clearUsers();
