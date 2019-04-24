@@ -15,7 +15,7 @@ class GreetedTest {
         greeted.greeted("Ntando");
         greeted.greeted("Zuma");
 
-        // assertEquals(greeted.counter(), 4);
+         assertEquals(greeted.counter(), 4);
     }
 
     @Test
@@ -42,9 +42,10 @@ class GreetedTest {
         greeted.greeted("Leyo");
         greeted.greeted("Ntando");
 
+        assertEquals(greeted.counter(), 2);
+        greeted.clearUser("Leyo");
+        assertEquals(greeted.counter(), 1);
 
-        assertEquals(greeted.clearUser("Leyo"), 4);
-        greeted.counter();
     }
 
     @Test

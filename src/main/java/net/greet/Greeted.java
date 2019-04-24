@@ -2,7 +2,7 @@ package net.greet;
 import java.util.*;
 
 public class Greeted {
-    HashMap<String, Integer> greetedUsers=new HashMap<String, Integer>();
+    Map<String, Integer> greetedUsers=new HashMap<String, Integer>();
 
     public int count = 0;
 
@@ -36,8 +36,8 @@ public class Greeted {
     }
 
 
-    public int clearUser(String name){
-        return greetedUsers.remove(name);
+    public void clearUser(String name){
+        greetedUsers.remove(name);
     }
 
 

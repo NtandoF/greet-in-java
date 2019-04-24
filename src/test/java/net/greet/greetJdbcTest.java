@@ -23,8 +23,7 @@ public class greetJdbcTest {
             try {
                 try(Connection conn = getConnection()) {
                     Statement statement = conn.createStatement();
-                    statement.addBatch("delete from users where name in ('Thabang', 'Ntando')");
-                    statement.addBatch("update users set counter = counter + 1  where name ='Thabang' and name = 'Ntando'");
+                    statement.addBatch("delete from users where name in ('Thabang', 'Ntando', 'Sive')");
                     statement.executeBatch();
                 }
             } catch(Exception ex) {
@@ -49,10 +48,10 @@ public class greetJdbcTest {
 
             Connection conn = getConnection();
             Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery ("select count(*) as users_counter from users");
+            ResultSet rs = statement.executeQuery ("select count(*) as counter from users");
 
             if (rs.next()) {
-                assertEquals(3, rs.getInt("users_counter"));
+                assertEquals(2, rs.getInt("counter"));
             }
 
 
@@ -102,5 +101,56 @@ public class greetJdbcTest {
         } catch (Exception e) {
             fail(e);
         }
+    }
+
+    @Test
+    void shouldReturnTheCorrectNumOfUsersStored() {
+        Greeted_jdbc greet = new Greeted_jdbc();
+        greet.greeted("Ntando");
+        greet.greeted("Thabang");
+        greet.greeted("Liwa");
+        assertEquals(3, greet.counter());
+    }
+
+    @Test
+    void shouldReturnTheCorrectNumOfOneUserStored() {
+        Greeted_jdbc greet = new Greeted_jdbc();
+
+        greet.greeted("Ntando");
+        greet.greeted("Ntando");
+        greet.greeted("Vuyo");
+        greet.greeted("Thabang");
+        greet.greeted("Sive");
+
+        assertEquals(2, greet.counterForUser("Ntando"));
+    }
+    @Test
+    void shouldRemoveAllUsers() {
+        Greeted_jdbc greet = new Greeted_jdbc();
+
+        greet.greeted("Ntando");
+        greet.greeted("Ntando");
+        greet.greeted("Ntando");
+        greet.greeted("Thabang");
+        assertEquals(4, greet.counter());
+        greet.clearUsers();
+        assertEquals(0, greet.counter());
+    }
+
+    @Test
+    void shouldRemoveOneUsers() {
+        Greeted_jdbc greet = new Greeted_jdbc();
+
+        greet.greeted("Ntando");
+        greet.greeted("Ntando");
+        greet.greeted("Ntando");
+        greet.greeted("Thabang");
+        greet.greeted("Vuyo");
+        greet.counter();
+        assertEquals(3,  greet.counter());
+        greet.clearUser("Vuyo");
+        assertEquals(2,  greet.counter());
+
+
     }
 }

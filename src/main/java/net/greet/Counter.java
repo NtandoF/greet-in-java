@@ -1,12 +1,16 @@
 package net.greet;
 
+import java.util.Map;
+
 public interface Counter {
 
      void greeted(String name);
      int counterForUser(String name);
      int counter();
-     int clearUser(String name);
+     void clearUser(String name);
      void clearUsers();
-     void greetedNames();
+     Map<String, Integer> greetedNames();
+     void help();
+     void exit();
 
 }
