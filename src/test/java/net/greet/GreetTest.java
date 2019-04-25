@@ -8,18 +8,18 @@ public class GreetTest {
 
         @Test
       public void ShouldGreetAUserInEnglishTest() {
-            Greet greet = new Greet("English", "Ntando");
-            assertEquals(greet.greetPerson(), "Hello Ntando!");
+            Greet greet = new Greet("English", "ntando");
+            assertEquals(greet.greetPerson(), "Hello ntando!");
         }
     @Test
     public void ShouldGreetAUserInXhosaTest() {
         Greet greet = new Greet("Xhosa", "Ntando");
-        assertEquals(greet.greetPerson(), "Molo Ntando!");
+        assertEquals(greet.greetPerson(), "Molo ntando!");
     }
     @Test
     public void ShouldGreetAUserInAfrikaansTest() {
-        Greet greet = new Greet("Afrikaans", "Ntando");
-        assertEquals(greet.greetPerson(), "Goeie dag Ntando!");
+        Greet greet = new Greet("Afrikaans", "ntando");
+        assertEquals(greet.greetPerson(), "Goeie dag ntando!");
     }
 
 }
