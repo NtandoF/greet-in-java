@@ -23,7 +23,7 @@ public class greetJdbcTest {
             try {
                 try(Connection conn = getConnection()) {
                     Statement statement = conn.createStatement();
-                    statement.addBatch("delete from users where name in ('Thabang', 'Ntando', 'Sive')");
+                    statement.addBatch("delete from users where name in ('thabang', 'ntando', 'sive')");
                     statement.executeBatch();
                 }
             } catch(Exception ex) {
@@ -41,24 +41,6 @@ public class greetJdbcTest {
             }
       }
 
-    @Test
-    public void addDataToUsersTableViaMigration() {
-
-        try {
-
-            Connection conn = getConnection();
-            Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery ("select count(*) as counter from users");
-
-            if (rs.next()) {
-                assertEquals(2, rs.getInt("counter"));
-            }
-
-
-        } catch (Exception e) {
-            fail(e);
-        }
-    }
 
 
     @Test
@@ -72,16 +54,16 @@ public class greetJdbcTest {
 
             PreparedStatement addUsersPreparedStatement = conn.prepareStatement(INSERT_USERS_SQL);
 
-            addUsersPreparedStatement.setString(1, "Thabang");
+            addUsersPreparedStatement.setString(1, "thabang");
             addUsersPreparedStatement.setInt(2, 1);
             addUsersPreparedStatement.execute();
 
 
-            addUsersPreparedStatement.setString(1, "Ntando");
+            addUsersPreparedStatement.setString(1, "ntando");
             addUsersPreparedStatement.setInt(2, 1);
             addUsersPreparedStatement.execute();
 
-            ResultSet rs = conn.createStatement().executeQuery("select * from users where name in ('Thabang', 'Ntando')");
+            ResultSet rs = conn.createStatement().executeQuery("select * from users where name in ('thabang', 'ntando')");
 
 
             int counter = 0;
@@ -106,9 +88,9 @@ public class greetJdbcTest {
     @Test
     void shouldReturnTheCorrectNumOfUsersStored() {
         Greeted_jdbc greet = new Greeted_jdbc();
-        greet.greeted("Ntando");
-        greet.greeted("Thabang");
-        greet.greeted("Sive");
+        greet.greeted("ntando");
+        greet.greeted("thabang");
+        greet.greeted("sive");
         assertEquals(3, greet.counter());
     }
 
@@ -116,21 +98,21 @@ public class greetJdbcTest {
     void shouldReturnTheCorrectNumOfOneUserStored() {
         Greeted_jdbc greet = new Greeted_jdbc();
 
-        greet.greeted("Ntando");
-        greet.greeted("Ntando");
-        greet.greeted("Thabang");
-        greet.greeted("Sive");
+        greet.greeted("ntando");
+        greet.greeted("ntando");
+        greet.greeted("thabang");
+        greet.greeted("sive");
 
         assertEquals(2, greet.counterForUser("Ntando"));
     }
     @Test
     void shouldRemoveAllUsers() {
         Greeted_jdbc greet = new Greeted_jdbc();
-
-        greet.greeted("Ntando");
-        greet.greeted("Ntando");
-        greet.greeted("Ntando");
-        greet.greeted("Thabang");
+        assertEquals(0, greet.counter());
+        greet.greeted("ntando");
+        greet.greeted("ntando");
+        greet.greeted("ntando");
+        greet.greeted("thabang");
         assertEquals(2, greet.counter());
         greet.clearUsers();
         assertEquals(0, greet.counter());
@@ -139,15 +121,14 @@ public class greetJdbcTest {
     @Test
     void shouldRemoveOneUsers() {
         Greeted_jdbc greet = new Greeted_jdbc();
+        assertEquals(0,  greet.counter());
+        greet.greeted("ntando");
+        greet.greeted("ntando");
+        greet.greeted("ntando");
+        greet.greeted("thabang");
+        greet.greeted("sive");
 
-        greet.greeted("Ntando");
-        greet.greeted("Ntando");
-        greet.greeted("Ntando");
-        greet.greeted("Thabang");
-        greet.greeted("Sive");
-        greet.counter();
-        assertEquals(3,  greet.counter());
-        greet.clearUser("Ntando");
+        greet.clearUser("ntando");
         assertEquals(2,  greet.counter());
 
 

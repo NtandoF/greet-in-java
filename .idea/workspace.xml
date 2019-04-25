@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de46ed92-e300-4361-a45c-cdb4ccb44d96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greetings_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/greetings_db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetedTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/greetJdbcTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/greetJdbcTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="150" column="22" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
+            <state relative-caret-position="76">
+              <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,9 +49,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-285">
               <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Greeted_jdbc.java" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java" />
       </list>
     </option>
@@ -178,42 +178,6 @@
               <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="greet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -240,7 +204,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556182430922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556183989918" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/projects/starting-with-jdbc-koans" />
@@ -275,22 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.greetJdbcTest.shouldRemoveOneUsers">
-    <configuration name="GreetedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.greet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.greet" />
-      <option name="MAIN_CLASS_NAME" value="net.greet.GreetedTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.greetJdbcTest">
     <configuration name="greetJdbcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
@@ -306,7 +255,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="greetJdbcTest.shouldRemoveAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="greetJdbcTest.addDataToUsersTableViaMigration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
         <pattern>
@@ -316,13 +265,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.greet" />
       <option name="MAIN_CLASS_NAME" value="net.greet.greetJdbcTest" />
-      <option name="METHOD_NAME" value="shouldRemoveAllUsers" />
+      <option name="METHOD_NAME" value="addDataToUsersTableViaMigration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="greetJdbcTest.shouldRemoveOneUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="greetJdbcTest.addDataUsersUsingPreparedStatement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
         <pattern>
@@ -332,7 +281,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.greet" />
       <option name="MAIN_CLASS_NAME" value="net.greet.greetJdbcTest" />
-      <option name="METHOD_NAME" value="shouldRemoveOneUsers" />
+      <option name="METHOD_NAME" value="addDataUsersUsingPreparedStatement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -354,12 +303,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="greetJdbcTest.shouldReturnTheCorrectNumOfUsersStored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.greet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.greet" />
+      <option name="MAIN_CLASS_NAME" value="net.greet.greetJdbcTest" />
+      <option name="METHOD_NAME" value="shouldReturnTheCorrectNumOfUsersStored" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.greetJdbcTest.shouldRemoveOneUsers" />
-        <item itemvalue="JUnit.greetJdbcTest.shouldRemoveAllUsers" />
         <item itemvalue="JUnit.greetJdbcTest" />
-        <item itemvalue="JUnit.GreetedTest" />
+        <item itemvalue="JUnit.greetJdbcTest.addDataToUsersTableViaMigration" />
+        <item itemvalue="JUnit.greetJdbcTest.addDataUsersUsingPreparedStatement" />
+        <item itemvalue="JUnit.greetJdbcTest.shouldReturnTheCorrectNumOfUsersStored" />
         <item itemvalue="JUnit.greetJdbcTest.shouldReturnTheCorrectNumOfOneUserStored" />
       </list>
     </recent_temporary>
@@ -378,34 +343,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="greetJdbcTest_shouldReturnTheCorrectNumOfOneUserStored - 2019.04.25 at 09h 45m 50s.xml">
-      <configuration name="greetJdbcTest.shouldReturnTheCorrectNumOfOneUserStored" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 09h 47m 19s.xml">
-      <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetedTest - 2019.04.25 at 09h 49m 33s.xml">
-      <configuration name="GreetedTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetJdbcTest - 2019.04.25 at 09h 49m 50s.xml">
-      <configuration name="greetJdbcTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetJdbcTest - 2019.04.25 at 09h 51m 16s.xml">
-      <configuration name="greetJdbcTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveAllUsers - 2019.04.25 at 09h 53m 40s.xml">
+    <history-entry file="greetJdbcTest_shouldRemoveAllUsers - 2019.04.25 at 11h 13m 29s.xml">
       <configuration name="greetJdbcTest.shouldRemoveAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 09h 55m 23s.xml">
+    <history-entry file="greetJdbcTest_shouldRemoveAllUsers - 2019.04.25 at 11h 13m 43s.xml">
+      <configuration name="greetJdbcTest.shouldRemoveAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 13m 56s.xml">
       <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 09h 56m 28s.xml">
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 14m 12s.xml">
       <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 09h 57m 28s.xml">
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 14m 20s.xml">
       <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 10h 08m 07s.xml">
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 15m 01s.xml">
+      <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetJdbcTest_addDataToUsersTableViaMigration - 2019.04.25 at 11h 15m 29s.xml">
+      <configuration name="greetJdbcTest.addDataToUsersTableViaMigration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 16m 16s.xml">
+      <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 16m 42s.xml">
+      <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="greetJdbcTest_shouldRemoveOneUsers - 2019.04.25 at 11h 17m 19s.xml">
       <configuration name="greetJdbcTest.shouldRemoveOneUsers" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -526,16 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -567,10 +522,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="150" column="22" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: net.greet.greetJdbcTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.356 s <<< FAILURE! - in net.greet.greetJdbcTest
-addDataUsersUsingPreparedStatement  Time elapsed: 0.242 s  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.335 s <<< FAILURE! - in net.greet.greetJdbcTest
+addDataUsersUsingPreparedStatement  Time elapsed: 0.226 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 	at net.greet.greetJdbcTest.addDataUsersUsingPreparedStatement(greetJdbcTest.java:102)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
@@ -10,7 +10,7 @@ Table "USERS" not found; SQL statement:
 insert into users (name, counter) values (?, ?) [42102-199]
 	at net.greet.greetJdbcTest.addDataUsersUsingPreparedStatement(greetJdbcTest.java:73)
 
-addDataToUsersTableViaMigration  Time elapsed: 0.007 s  <<< FAILURE!
+addDataToUsersTableViaMigration  Time elapsed: 0.009 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 	at net.greet.greetJdbcTest.addDataToUsersTableViaMigration(greetJdbcTest.java:59)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
@@ -18,19 +18,19 @@ Table "USERS" not found; SQL statement:
 select count(*) as counter from users [42102-199]
 	at net.greet.greetJdbcTest.addDataToUsersTableViaMigration(greetJdbcTest.java:51)
 
-shouldRemoveAllUsers  Time elapsed: 0.027 s  <<< ERROR!
+shouldRemoveAllUsers  Time elapsed: 0.028 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.greetJdbcTest.shouldRemoveAllUsers(greetJdbcTest.java:134)
 
-shouldRemoveOneUsers  Time elapsed: 0.011 s  <<< ERROR!
+shouldRemoveOneUsers  Time elapsed: 0.026 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.greetJdbcTest.shouldRemoveOneUsers(greetJdbcTest.java:148)
 
-shouldReturnTheCorrectNumOfUsersStored  Time elapsed: 0.056 s  <<< ERROR!
+shouldReturnTheCorrectNumOfUsersStored  Time elapsed: 0.025 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfUsersStored(greetJdbcTest.java:112)
 
-shouldReturnTheCorrectNumOfOneUserStored  Time elapsed: 0.007 s  <<< ERROR!
+shouldReturnTheCorrectNumOfOneUserStored  Time elapsed: 0.012 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfOneUserStored(greetJdbcTest.java:124)
 
