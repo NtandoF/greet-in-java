@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: net.greet.GreetTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in net.greet.GreetTest
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in net.greet.GreetTest
+ShouldGreetAUserInEnglishTest  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Hello ntando!> but was: <Hello Ntando!>
+	at net.greet.GreetTest.ShouldGreetAUserInEnglishTest(GreetTest.java:12)
+
+ShouldGreetAUserInXhosaTest  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Molo ntando!> but was: <Molo Ntando!>
+	at net.greet.GreetTest.ShouldGreetAUserInXhosaTest(GreetTest.java:17)
+
+ShouldGreetAUserInAfrikaansTest  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Goeie dag ntando!> but was: <Goeie dag Ntando!>
+	at net.greet.GreetTest.ShouldGreetAUserInAfrikaansTest(GreetTest.java:22)
+

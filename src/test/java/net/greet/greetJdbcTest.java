@@ -108,7 +108,7 @@ public class greetJdbcTest {
         Greeted_jdbc greet = new Greeted_jdbc();
         greet.greeted("Ntando");
         greet.greeted("Thabang");
-        greet.greeted("Liwa");
+        greet.greeted("Sive");
         assertEquals(3, greet.counter());
     }
 
@@ -118,7 +118,6 @@ public class greetJdbcTest {
 
         greet.greeted("Ntando");
         greet.greeted("Ntando");
-        greet.greeted("Vuyo");
         greet.greeted("Thabang");
         greet.greeted("Sive");
 
@@ -132,7 +131,7 @@ public class greetJdbcTest {
         greet.greeted("Ntando");
         greet.greeted("Ntando");
         greet.greeted("Thabang");
-        assertEquals(4, greet.counter());
+        assertEquals(2, greet.counter());
         greet.clearUsers();
         assertEquals(0, greet.counter());
     }
@@ -145,10 +144,10 @@ public class greetJdbcTest {
         greet.greeted("Ntando");
         greet.greeted("Ntando");
         greet.greeted("Thabang");
-        greet.greeted("Vuyo");
+        greet.greeted("Sive");
         greet.counter();
         assertEquals(3,  greet.counter());
-        greet.clearUser("Vuyo");
+        greet.clearUser("Ntando");
         assertEquals(2,  greet.counter());
 
 
