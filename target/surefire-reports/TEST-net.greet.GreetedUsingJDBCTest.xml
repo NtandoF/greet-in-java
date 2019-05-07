@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="net.greet.greetJdbcTest" time="0.335" tests="7" errors="4" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="net.greet.GreetedUsingJDBCTest" time="0.382" tests="6" errors="4" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/coder/IdeaProjects/greet-in-java/target/surefire/surefirebooter815647151762484174.jar /home/coder/IdeaProjects/greet-in-java/target/surefire 2019-04-25T11-03-14_078-jvmRun1 surefire6135001356472669503tmp surefire_06071393699800852449tmp"/>
+    <property name="sun.java.command" value="/home/coder/IdeaProjects/greet-in-java/target/surefire/surefirebooter3282329136485396769.jar /home/coder/IdeaProjects/greet-in-java/target/surefire 2019-04-30T12-27-51_012-jvmRun1 surefire8375674630575025191tmp surefire_04672796705720904204tmp"/>
     <property name="surefire.test.class.path" value="/home/coder/IdeaProjects/greet-in-java/target/test-classes:/home/coder/IdeaProjects/greet-in-java/target/classes:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/coder/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/coder/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:/home/coder/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/coder"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/coder/IdeaProjects/greet-in-java/target/surefire/surefirebooter815647151762484174.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/IdeaProjects/greet-in-java/target/surefire/surefirebooter3282329136485396769.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_191-8u191-b12-2ubuntu0.16.04.1-b12"/>
@@ -58,40 +58,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="addDataUsersUsingPreparedStatement" classname="net.greet.greetJdbcTest" time="0.226">
+  <testcase name="addDataUsersUsingPreparedStatement" classname="net.greet.GreetedUsingJDBCTest" time="0.299">
     <failure type="org.opentest4j.AssertionFailedError:">org.opentest4j.AssertionFailedError: 
-	at net.greet.greetJdbcTest.addDataUsersUsingPreparedStatement(greetJdbcTest.java:102)
+	at net.greet.GreetedUsingJDBCTest.addDataUsersUsingPreparedStatement(GreetedUsingJDBCTest.java:84)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
 Table "USERS" not found; SQL statement:
 insert into users (name, counter) values (?, ?) [42102-199]
-	at net.greet.greetJdbcTest.addDataUsersUsingPreparedStatement(greetJdbcTest.java:73)
+	at net.greet.GreetedUsingJDBCTest.addDataUsersUsingPreparedStatement(GreetedUsingJDBCTest.java:55)
 </failure>
     <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
+delete from users where name in ('thabang', 'ntando', 'sive') [42102-199]
 ]]></system-out>
   </testcase>
-  <testcase name="addDataToUsersTableViaMigration" classname="net.greet.greetJdbcTest" time="0.009">
-    <failure type="org.opentest4j.AssertionFailedError:">org.opentest4j.AssertionFailedError: 
-	at net.greet.greetJdbcTest.addDataToUsersTableViaMigration(greetJdbcTest.java:59)
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
-Table "USERS" not found; SQL statement:
-select count(*) as counter from users [42102-199]
-	at net.greet.greetJdbcTest.addDataToUsersTableViaMigration(greetJdbcTest.java:51)
-</failure>
-    <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
-]]></system-out>
-  </testcase>
-  <testcase name="shouldRemoveAllUsers" classname="net.greet.greetJdbcTest" time="0.028">
+  <testcase name="shouldRemoveAllUsers" classname="net.greet.GreetedUsingJDBCTest" time="0.041">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at net.greet.greetJdbcTest.shouldRemoveAllUsers(greetJdbcTest.java:134)
+	at net.greet.GreetedUsingJDBCTest.shouldRemoveAllUsers(GreetedUsingJDBCTest.java:111)
 </error>
     <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
+delete from users where name in ('thabang', 'ntando', 'sive') [42102-199]
 ]]></system-out>
     <system-err><![CDATA[org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
 insert into users (name, counter) values(?, ?) [42102-199]
@@ -111,8 +95,8 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
 	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
-	at net.greet.Greeted_jdbc.<init>(Greeted_jdbc.java:34)
-	at net.greet.greetJdbcTest.shouldRemoveAllUsers(greetJdbcTest.java:128)
+	at net.greet.GreetedUsingJDBC.<init>(GreetedUsingJDBC.java:34)
+	at net.greet.GreetedUsingJDBCTest.shouldRemoveAllUsers(GreetedUsingJDBCTest.java:110)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,17 +152,12 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]></system-err>
   </testcase>
-  <testcase name="shouldRemoveOneUsers" classname="net.greet.greetJdbcTest" time="0.026">
+  <testcase name="shouldRemoveOneUsers" classname="net.greet.GreetedUsingJDBCTest" time="0.014">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at net.greet.greetJdbcTest.shouldRemoveOneUsers(greetJdbcTest.java:148)
+	at net.greet.GreetedUsingJDBCTest.shouldRemoveOneUsers(GreetedUsingJDBCTest.java:124)
 </error>
     <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
-Error: java.lang.NullPointerException
+delete from users where name in ('thabang', 'ntando', 'sive') [42102-199]
 ]]></system-out>
     <system-err><![CDATA[org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
 insert into users (name, counter) values(?, ?) [42102-199]
@@ -198,8 +177,8 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
 	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
-	at net.greet.Greeted_jdbc.<init>(Greeted_jdbc.java:34)
-	at net.greet.greetJdbcTest.shouldRemoveOneUsers(greetJdbcTest.java:141)
+	at net.greet.GreetedUsingJDBC.<init>(GreetedUsingJDBC.java:34)
+	at net.greet.GreetedUsingJDBCTest.shouldRemoveOneUsers(GreetedUsingJDBCTest.java:123)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -255,12 +234,12 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]></system-err>
   </testcase>
-  <testcase name="shouldReturnTheCorrectNumOfUsersStored" classname="net.greet.greetJdbcTest" time="0.025">
+  <testcase name="shouldReturnTheCorrectNumOfUsersStored" classname="net.greet.GreetedUsingJDBCTest" time="0.007">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfUsersStored(greetJdbcTest.java:112)
+	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfUsersStored(GreetedUsingJDBCTest.java:94)
 </error>
     <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
+delete from users where name in ('thabang', 'ntando', 'sive') [42102-199]
 Error: java.lang.NullPointerException
 Error: java.lang.NullPointerException
 Error: java.lang.NullPointerException
@@ -283,8 +262,8 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
 	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
-	at net.greet.Greeted_jdbc.<init>(Greeted_jdbc.java:34)
-	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfUsersStored(greetJdbcTest.java:108)
+	at net.greet.GreetedUsingJDBC.<init>(GreetedUsingJDBC.java:34)
+	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfUsersStored(GreetedUsingJDBCTest.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -340,13 +319,13 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]></system-err>
   </testcase>
-  <testcase name="loadJdbcDriver" classname="net.greet.greetJdbcTest" time="0"/>
-  <testcase name="shouldReturnTheCorrectNumOfOneUserStored" classname="net.greet.greetJdbcTest" time="0.012">
+  <testcase name="loadJdbcDriver" classname="net.greet.GreetedUsingJDBCTest" time="0.001"/>
+  <testcase name="shouldReturnTheCorrectNumOfOneUserStored" classname="net.greet.GreetedUsingJDBCTest" time="0.013">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfOneUserStored(greetJdbcTest.java:124)
+	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfOneUserStored(GreetedUsingJDBCTest.java:106)
 </error>
     <system-out><![CDATA[These test will fail until the users table is created: org.h2.jdbc.JdbcBatchUpdateException: Table "USERS" not found; SQL statement:
-delete from users where name in ('Thabang', 'Ntando', 'Sive') [42102-199]
+delete from users where name in ('thabang', 'ntando', 'sive') [42102-199]
 Error: java.lang.NullPointerException
 Error: java.lang.NullPointerException
 Error: java.lang.NullPointerException
@@ -370,8 +349,8 @@ insert into users (name, counter) values(?, ?) [42102-199]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
 	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
 	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
-	at net.greet.Greeted_jdbc.<init>(Greeted_jdbc.java:34)
-	at net.greet.greetJdbcTest.shouldReturnTheCorrectNumOfOneUserStored(greetJdbcTest.java:117)
+	at net.greet.GreetedUsingJDBC.<init>(GreetedUsingJDBC.java:34)
+	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfOneUserStored(GreetedUsingJDBCTest.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

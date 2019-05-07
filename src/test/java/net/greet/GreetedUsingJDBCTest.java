@@ -8,7 +8,7 @@ import java.sql.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class greetJdbcTest {
+public class GreetedUsingJDBCTest {
 
     final String GREET_DATABASE_URL = "jdbc:h2:./target/greetings_db";
 
@@ -87,7 +87,7 @@ public class greetJdbcTest {
 
     @Test
     void shouldReturnTheCorrectNumOfUsersStored() {
-        Greeted_jdbc greet = new Greeted_jdbc();
+        GreetedUsingJDBC greet = new GreetedUsingJDBC();
         greet.greeted("ntando");
         greet.greeted("thabang");
         greet.greeted("sive");
@@ -96,7 +96,7 @@ public class greetJdbcTest {
 
     @Test
     void shouldReturnTheCorrectNumOfOneUserStored() {
-        Greeted_jdbc greet = new Greeted_jdbc();
+        GreetedUsingJDBC greet = new GreetedUsingJDBC();
 
         greet.greeted("ntando");
         greet.greeted("ntando");
@@ -107,7 +107,7 @@ public class greetJdbcTest {
     }
     @Test
     void shouldRemoveAllUsers() {
-        Greeted_jdbc greet = new Greeted_jdbc();
+        GreetedUsingJDBC greet = new GreetedUsingJDBC();
         assertEquals(0, greet.counter());
         greet.greeted("ntando");
         greet.greeted("ntando");
@@ -120,7 +120,7 @@ public class greetJdbcTest {
 
     @Test
     void shouldRemoveOneUsers() {
-        Greeted_jdbc greet = new Greeted_jdbc();
+        GreetedUsingJDBC greet = new GreetedUsingJDBC();
         assertEquals(0,  greet.counter());
         greet.greeted("ntando");
         greet.greeted("ntando");

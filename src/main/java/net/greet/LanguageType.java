@@ -13,7 +13,11 @@ public enum LanguageType {
     }
 
     public String getLang(String name) {
-        return this.lang + name;
+        return this.lang + " " + name;
+    }
+
+    public String getlanguage(){
+        return this.lang;
     }
 
 }

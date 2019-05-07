@@ -6,7 +6,7 @@ import java.util.Map;
 
 import static java.sql.DriverManager.getConnection;
 
-public class Greeted_jdbc implements Counter {
+public class GreetedUsingJDBC implements Greeted {
     final String INSERT_USERS_SQL = "insert into users (name, counter) values(?, ?)";
 
     final String FIND_USERS_SQL = "select * from users";
@@ -28,7 +28,7 @@ public class Greeted_jdbc implements Counter {
     PreparedStatement psUpdateUsersCount;
     PreparedStatement findUserByName;
 
-    public Greeted_jdbc() {
+    public GreetedUsingJDBC() {
         try {
             conn = getConnection("jdbc:h2:./target/greetings_db","sa", "");
             psCreateNewUsers = conn.prepareStatement(INSERT_USERS_SQL);
@@ -151,15 +151,16 @@ public class Greeted_jdbc implements Counter {
         return map.size();
     }
 
-    public void help(){
-        System.out.println(" Valid commands that you can use:\n" +
+    public String help(){
+        return " Valid commands that you can use:\n" +
                 "        greet : followed by your name and prefered language.\n" +
                 "        greeted : to view all the people greeted.\n" +
                 "        counter : to view how many people greeted. \n" +
                 "        counterUser : to view how many times one person as been greeted. \n" +
                 "        clearUser : to remove one person. \n" +
-                "        clearUsers : to clear all people entered.");
+                "        clearUsers : to clear all people entered.";
     }
+
 
     public void exit(){
         System.exit(1);

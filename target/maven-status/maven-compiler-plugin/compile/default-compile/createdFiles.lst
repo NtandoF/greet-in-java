@@ -1,5 +1,6 @@
-net/greet/Greeted_jdbc.class
 net/greet/Greet.class
-net/greet/Counter.class
+net/greet/GreetedUsingMap.class
+net/greet/GreetedUsingJDBC.class
+net/greet/Main.class
 net/greet/Greeted.class
 net/greet/LanguageType.class

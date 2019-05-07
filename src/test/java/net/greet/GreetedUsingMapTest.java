@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GreetedTest {
+class GreetedUsingMapTest {
 
     @Test
     public void shouldReturnTheCorrectNumOfUsersGreeted() {
 
-        Greeted greeted = new Greeted();
+        GreetedUsingMap greeted = new GreetedUsingMap();
         greeted.greeted("tido");
         greeted.greeted("Thabang");
         greeted.greeted("Ntando");
@@ -21,7 +21,7 @@ class GreetedTest {
     @Test
     public void shouldReturnTheCorrectNumForOneUserGreeted() {
 
-        Greeted greeted = new Greeted();
+        GreetedUsingMap greeted = new GreetedUsingMap();
         greeted.greeted("tido");
         greeted.greeted("tido");
         greeted.greeted("tido");
@@ -35,7 +35,7 @@ class GreetedTest {
     @Test
     public void shouldRemoveOneUser() {
 
-        Greeted greeted = new Greeted();
+        GreetedUsingMap greeted = new GreetedUsingMap();
         greeted.greeted("Leyo");
         greeted.greeted("Leyo");
         greeted.greeted("Leyo");
@@ -51,7 +51,7 @@ class GreetedTest {
     @Test
     public void shouldRemoveAllUsers() {
 
-        Greeted greeted = new Greeted();
+        GreetedUsingMap greeted = new GreetedUsingMap();
         greeted.greeted("tido");
         greeted.greeted("tido");
         greeted.greeted("tido");
