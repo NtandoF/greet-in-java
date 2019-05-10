@@ -61,8 +61,7 @@ public class GreetedUsingJDBC implements Greeted {
 
 
     @Override
-    public void clearUser(String name) {
-
+    public String clearUser(String name) {
         try {
             psRemoveOneUser.setString(1, name);
             psRemoveOneUser.execute();
@@ -70,13 +69,14 @@ public class GreetedUsingJDBC implements Greeted {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return "User deleted :-)";
     }
 
 
     @Override
-    public void clearUsers() {
+    public String clearUsers() {
 
-            try {
+        try {
                     Statement statement = conn.createStatement();
                     statement.addBatch("delete from users");
                     statement.executeBatch();
@@ -85,6 +85,7 @@ public class GreetedUsingJDBC implements Greeted {
             } catch(Exception ex) {
                 System.out.println("These test will fail until the users table is created: " + ex);
             }
+        return "Users was deleted :-)";
        }
 
     public void greeted(String name) {

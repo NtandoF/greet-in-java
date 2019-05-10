@@ -36,13 +36,23 @@ public class GreetedUsingMap {
     }
 
 
-    public void clearUser(String name){
-        greetedUsers.remove(name);
+    public String clearUser(String name){
+       if (greetedUsers.containsKey(name)){
+           greetedUsers.remove(name);
+           return "name has been removed";
+       }else {
+           return "there no such user";
+       }
     }
 
 
-    public void clearUsers(){
-       greetedUsers.clear();
+    public String clearUsers(){
+        if (greetedUsers.isEmpty()==false){
+            greetedUsers.clear();
+            return "Users are all deleted";
+        }else {
+            return "users not found";
+        }
     }
 
     public String help(){

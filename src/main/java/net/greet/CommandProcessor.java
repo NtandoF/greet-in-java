@@ -16,40 +16,32 @@ public class CommandProcessor {
         if (("greet").equals(commandExtractor.getCommand())) {
             return commandExtractor.greetPerson();
         } else if (("greeted").equals(commandExtractor.getCommand())) {
-            if (commandExtractor.getName().isEmpty()) {
-                return greeted.greetedNames().toString();
-            }
+            return greeted.greetedNames().toString();
         } else if (("greeted").equals(commandExtractor.getCommand())) {
-            if (commandExtractor.getName().isEmpty()) {
-                return String.valueOf(greeted.counterForUser(commandExtractor.getName()));
 
-            } else if (("counter").equals(commandExtractor.getCommand())) {
-                return String.valueOf(greeted.counter());
+            return String.valueOf(greeted.counterForUser(commandExtractor.getName()));
 
-            } else if (("clearUsers").equals(commandExtractor.getCommand())) {
-                greeted.clearUsers();
-                return "0";
+        } else if (("counter").equals(commandExtractor.getCommand())) {
+            return String.valueOf(greeted.counter());
 
-            } else if (("clearUser").equals(commandExtractor.getCommand())) {
-                greeted.clearUser("");
-                return "0";
+        } else if (("clearUsers").equals(commandExtractor.getCommand())) {
+            return greeted.clearUsers();
 
-            } else if (("exit").equals(commandExtractor.getCommand())) {
-                greeted.exit();
-                return "0";
-            } else if (("help").equals(commandExtractor.getCommand())) {
+        } else if (("clearUser").equals(commandExtractor.getCommand())) {
+            return greeted.clearUser(commandExtractor.getName());
 
-                return greeted.help();
-            }
+        } else if (("exit").equals(commandExtractor.getCommand())) {
+            greeted.exit();
+            return "0";
+        } else if (("help").equals(commandExtractor.getCommand())) {
 
-//        else {
+            return greeted.help();
+        } else {
             return "Invalid";
-//        }
-
         }
-        return "Invalid";
     }
 }
+
 
 
 

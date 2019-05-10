@@ -11,13 +11,16 @@ public class CommandExtractor {
 
     public CommandExtractor(String command) {
         this.commandParts = command.split(" ");
-        this.name = "";
         this.lang = "xhosa";
         if (commandParts.length == 3) {
             this.lang=commandParts[2];
         }
+
         this.command = commandParts [0];
 
+        if (commandParts.length >= 2){
+            this.name=commandParts[1];
+        }
     }
 
     public String getLang() {
@@ -26,10 +29,8 @@ public class CommandExtractor {
     }
 
         public String getName(){
-        if (commandParts.length >= 2){
-            return commandParts[1];
-        }
-        return name = "";
+
+        return name;
     }
 
     public String greetPerson(){

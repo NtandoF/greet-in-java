@@ -3,33 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="de46ed92-e300-4361-a45c-cdb4ccb44d96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Greet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/Greet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Greeted_jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/GreetedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/GreetedUsingMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/GreetedUsingJDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/Counter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/Greet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/Greet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/CommandExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/CommandExtractor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/greet/Greeted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/Greeted.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/Greeted_jdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/LanguageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/LanguageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/greetings_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/greetings_db.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/greetings_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/greetings_db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetedTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.greetJdbcTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.GreetedTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.greetJdbcTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/greetJdbcTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandExtractorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest$shouldGreetPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest$shouldGreetPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingJDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingJDBCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingMapTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,13 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/GreetedUsingJDBCTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -56,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="135">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#266#267#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
@@ -69,8 +59,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            <state relative-caret-position="315">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+              <folding>
+                <element signature="e#1768#1769#0" expanded="true" />
+                <element signature="e#1798#1799#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greeted.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -87,12 +81,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="164" column="15" selection-start-line="164" selection-start-column="15" selection-end-line="164" selection-end-column="15" />
+            <state relative-caret-position="210">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5306#5307#0" expanded="true" />
-                <element signature="e#5336#5337#0" expanded="true" />
+                <element signature="e#5337#5338#0" expanded="true" />
+                <element signature="e#5367#5368#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,10 +95,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="-368">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
                 <element signature="e#262#263#0" expanded="true" />
@@ -123,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="84" column="79" selection-start-line="84" selection-start-column="79" selection-end-line="84" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,17 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="870">
               <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -195,24 +192,24 @@
         <option value="$PROJECT_DIR$/src/test/java/net/greet/Greeted_jdbcTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_users.sql" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Counter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Greeted_jdbc.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/greetJdbcTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetedUsingMapTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetedUsingJDBCTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/Greet.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/Greet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" />
       </list>
     </option>
   </component>
@@ -274,6 +271,13 @@
               <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="greet-in-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="greet-in-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,7 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557238195695" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557496633391" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BikeRide" />
@@ -333,24 +337,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommandProcessorTest$shouldGreetPerson.shouldCountHowManyTimesHasOneUserBeenGreeted">
-    <configuration name="CommandProcessorTest$shouldGreetPerson.shouldCountHowManyTimesHasOneUserBeenGreeted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in greet-in-java">
+    <configuration name="All in greet-in-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.greet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.greet" />
-      <option name="MAIN_CLASS_NAME" value="net.greet.CommandProcessorTest$shouldGreetPerson" />
-      <option name="METHOD_NAME" value="shouldCountHowManyTimesHasOneUserBeenGreeted" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandProcessorTest$shouldGreetPerson.shouldNotGreet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <extension name="coverage">
         <pattern>
@@ -360,39 +356,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.greet" />
       <option name="MAIN_CLASS_NAME" value="net.greet.CommandProcessorTest$shouldGreetPerson" />
-      <option name="METHOD_NAME" value="shouldNotGreet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.greet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.greet" />
-      <option name="MAIN_CLASS_NAME" value="net.greet.CommandProcessorTest$shouldGreetPerson" />
-      <option name="METHOD_NAME" value="shouldReturnAMapOfAllUsersGreeted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturntheCorrectNumberOfUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="greet-in-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.greet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.greet" />
-      <option name="MAIN_CLASS_NAME" value="net.greet.CommandProcessorTest$shouldGreetPerson" />
-      <option name="METHOD_NAME" value="shouldReturntheCorrectNumberOfUsers" />
+      <option name="METHOD_NAME" value="shouldClearAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -413,13 +377,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GreetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.greet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.greet" />
+      <option name="MAIN_CLASS_NAME" value="net.greet.GreetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GreetTest.ShouldGreetAUserInEnglishTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="greet-in-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.greet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.greet" />
+      <option name="MAIN_CLASS_NAME" value="net.greet.GreetTest" />
+      <option name="METHOD_NAME" value="ShouldGreetAUserInEnglishTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CommandProcessorTest$shouldGreetPerson.shouldCountHowManyTimesHasOneUserBeenGreeted" />
-        <item itemvalue="JUnit.CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" />
-        <item itemvalue="JUnit.CommandProcessorTest$shouldGreetPerson.shouldReturntheCorrectNumberOfUsers" />
+        <item itemvalue="JUnit.All in greet-in-java" />
+        <item itemvalue="JUnit.GreetTest" />
+        <item itemvalue="JUnit.GreetTest.ShouldGreetAUserInEnglishTest" />
         <item itemvalue="JUnit.CommandProcessorTest" />
-        <item itemvalue="JUnit.CommandProcessorTest$shouldGreetPerson.shouldNotGreet" />
+        <item itemvalue="JUnit.CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -437,35 +432,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturntheCorrectNumberOfUsers - 2019.05.07 at 15h 50m 13s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturntheCorrectNumberOfUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 12h 44m 04s.xml">
+      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturntheCorrectNumberOfUsers - 2019.05.07 at 15h 50m 50s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturntheCorrectNumberOfUsers" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 12h 44m 36s.xml">
+      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 15h 56m 56s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 15h 35m 20s.xml">
+      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 03m 58s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 15h 42m 18s.xml">
+      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 05m 06s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="CommandProcessorTest - 2019.05.10 at 15h 42m 29s.xml">
+      <configuration name="CommandProcessorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 06m 16s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="All_in_greet-in-java - 2019.05.10 at 15h 42m 50s.xml">
+      <configuration name="All in greet-in-java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 06m 27s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="All_in_greet-in-java - 2019.05.10 at 15h 49m 13s.xml">
+      <configuration name="All in greet-in-java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 08m 32s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="All_in_greet-in-java - 2019.05.10 at 15h 51m 29s.xml">
+      <configuration name="All in greet-in-java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 08m 50s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="All_in_greet-in-java - 2019.05.10 at 15h 52m 05s.xml">
+      <configuration name="All in greet-in-java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldReturnAMapOfAllUsersGreeted - 2019.05.07 at 16h 09m 59s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldReturnAMapOfAllUsersGreeted" configurationId="JUnit" />
+    <history-entry file="GreetTest_ShouldGreetAUserInEnglishTest - 2019.05.10 at 15h 56m 42s.xml">
+      <configuration name="GreetTest.ShouldGreetAUserInEnglishTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -477,14 +472,14 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.28030303" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28030303" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5022727" side_tool="true" weight="0.43875968" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32868218" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49772727" visible="true" weight="0.43875968" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49772727" visible="true" weight="0.43875968" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3984496" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -499,41 +494,13 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.28030303" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5022727" side_tool="true" weight="0.43875968" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.32868218" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32868218" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49772727" weight="0.43875968" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.3984496" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49772727" weight="0.3658915" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java</url>
-          <line>56</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -578,52 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -639,44 +564,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="870">
           <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greeted.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="164" column="15" selection-start-line="164" selection-start-column="15" selection-end-line="164" selection-end-column="15" />
+        <state relative-caret-position="210">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5306#5307#0" expanded="true" />
-            <element signature="e#5336#5337#0" expanded="true" />
+            <element signature="e#5337#5338#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
           <folding>
             <element signature="e#224#225#0" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
@@ -684,10 +617,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+        <state relative-caret-position="180">
+          <caret line="84" column="79" selection-start-line="84" selection-start-column="79" selection-end-line="84" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/LanguageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/Greet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
