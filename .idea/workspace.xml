@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de46ed92-e300-4361-a45c-cdb4ccb44d96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/Greeted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetedUsingMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/CommandProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/CommandExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/CommandExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/Greeted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/Greeted.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingJDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetedUsingMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greetings_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/greetings_db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greetings_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/greetings_db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandExtractorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest$shouldGreetPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest$shouldGreetPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/CommandProcessorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingJDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingJDBCTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/GreetedUsingMapTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="de46ed92-e300-4361-a45c-cdb4ccb44d96" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/GreetTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -114,6 +92,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -137,15 +120,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -302,7 +276,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557496633391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557496967591" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BikeRide" />
@@ -432,12 +406,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 12h 44m 04s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 12h 44m 36s.xml">
-      <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandProcessorTest$shouldGreetPerson_shouldClearAllUsers - 2019.05.10 at 15h 35m 20s.xml">
       <configuration name="CommandProcessorTest$shouldGreetPerson.shouldClearAllUsers" configurationId="JUnit" />
     </history-entry>
@@ -462,29 +430,34 @@
     <history-entry file="GreetTest_ShouldGreetAUserInEnglishTest - 2019.05.10 at 15h 56m 42s.xml">
       <configuration name="GreetTest.ShouldGreetAUserInEnglishTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GreetTest - 2019.05.10 at 15h 57m 16s.xml">
+      <configuration name="GreetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_greet-in-java - 2019.05.10 at 15h 57m 28s.xml">
+      <configuration name="All in greet-in-java" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28030303" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.28030303" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5022727" side_tool="true" weight="0.43875968" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32868218" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49772727" visible="true" weight="0.43875968" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49772727" weight="0.43875968" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3984496" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49772727" weight="0.3658915" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49772727" visible="true" weight="0.3658915" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -664,6 +637,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
