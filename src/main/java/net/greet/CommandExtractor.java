@@ -20,7 +20,13 @@ public class CommandExtractor {
 
         if (commandParts.length >= 2){
             this.name=commandParts[1];
+        } else {
+            this.name = "";
         }
+    }
+
+    public boolean containName(){
+        return !name.isEmpty();
     }
 
     public String getLang() {

@@ -54,15 +54,13 @@ class CommandProcessorTest {
         @Test
         @DisplayName("greeted")
         void shouldCountHowManyTimesHasOneUserBeenGreeted() {
-
-            Map<String, Integer> map = new HashMap<>();
-            map.put("thabang", 5);
-
-            when(greetedMock.greetedNames()).thenReturn(map);
-
             CommandExtractor commandExtractor = new CommandExtractor("greeted thabang");
 
-            assertEquals(comm.main(commandExtractor), "{thabang=5}");
+            when(greetedMock.counterForUser("thabang")).thenReturn(1);
+
+            assertEquals( 1, Integer.parseInt(comm.main(commandExtractor)));
+
+            verify(greetedMock).counterForUser("thabang");
 
         }
 

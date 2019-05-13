@@ -18,7 +18,7 @@ public class Main {
             String name = input.nextLine();
 
             CommandExtractor command  = new CommandExtractor(name);
-            executer.main(command);
+            System.out.println( executer.main(command));
 
 
         }

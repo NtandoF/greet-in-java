@@ -6,7 +6,7 @@ public class CommandProcessor {
     //    String [] index;
 //    Greet greet; GreetedUsingJDBC greeted;
     Greeted greeted;
-//
+//0
 
     CommandProcessor(Greeted greeter) {
         this.greeted = greeter;
@@ -14,12 +14,13 @@ public class CommandProcessor {
 
     public String main(CommandExtractor commandExtractor) {
         if (("greet").equals(commandExtractor.getCommand())) {
+            greeted.greeted(commandExtractor.getName());
             return commandExtractor.greetPerson();
         } else if (("greeted").equals(commandExtractor.getCommand())) {
+            if (commandExtractor.containName()) {
+                return String.valueOf(greeted.counterForUser(commandExtractor.getName()));
+            }
             return greeted.greetedNames().toString();
-        } else if (("greeted").equals(commandExtractor.getCommand())) {
-
-            return String.valueOf(greeted.counterForUser(commandExtractor.getName()));
 
         } else if (("counter").equals(commandExtractor.getCommand())) {
             return String.valueOf(greeted.counter());
@@ -29,6 +30,7 @@ public class CommandProcessor {
 
         } else if (("clearUser").equals(commandExtractor.getCommand())) {
             return greeted.clearUser(commandExtractor.getName());
+
 
         } else if (("exit").equals(commandExtractor.getCommand())) {
             greeted.exit();
@@ -40,6 +42,7 @@ public class CommandProcessor {
             return "Invalid";
         }
     }
+
 }
 
 
