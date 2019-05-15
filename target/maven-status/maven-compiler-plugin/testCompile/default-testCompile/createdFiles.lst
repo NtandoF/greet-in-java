@@ -1,3 +1,5 @@
 net/greet/GreetTest.class
+net/greet/CommandProcessorTest.class
+net/greet/CommandProcessorTest$shouldGreetPerson.class
 net/greet/GreetedUsingMapTest.class
 net/greet/GreetedUsingJDBCTest.class

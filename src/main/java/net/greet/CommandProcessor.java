@@ -3,10 +3,7 @@ package net.greet;
 public class CommandProcessor {
 
     CommandExtractor commandExtractor;
-    //    String [] index;
-//    Greet greet; GreetedUsingJDBC greeted;
     Greeted greeted;
-//0
 
     CommandProcessor(Greeted greeter) {
         this.greeted = greeter;
@@ -36,7 +33,6 @@ public class CommandProcessor {
             greeted.exit();
             return "0";
         } else if (("help").equals(commandExtractor.getCommand())) {
-
             return greeted.help();
         } else {
             return "Invalid";

@@ -101,5 +101,27 @@ class CommandProcessorTest {
 
             assertEquals(comm.main(commandExtractor), "User deleted :-)");
         }
+        @Test
+        @DisplayName("Help")
+        void shouldPrinttheHelpInfo() {
+
+            when(greetedMock.help()).thenReturn(" Valid commands that you can use:\n" +
+                    "        greet : followed by your name and prefered language.\n" +
+                    "        greeted : to view all the people greeted.\n" +
+                    "        counter : to view how many people greeted. \n" +
+                    "        counterUser : to view how many times one person as been greeted. \n" +
+                    "        clearUser : to remove one person. \n" +
+                    "        clearUsers : to clear all people entered.");
+
+            CommandExtractor commandExtractor = new CommandExtractor("help");
+
+            assertEquals(comm.main(commandExtractor), " Valid commands that you can use:\n" +
+                    "        greet : followed by your name and prefered language.\n" +
+                    "        greeted : to view all the people greeted.\n" +
+                    "        counter : to view how many people greeted. \n" +
+                    "        counterUser : to view how many times one person as been greeted. \n" +
+                    "        clearUser : to remove one person. \n" +
+                    "        clearUsers : to clear all people entered.");
+        }
     }
 }

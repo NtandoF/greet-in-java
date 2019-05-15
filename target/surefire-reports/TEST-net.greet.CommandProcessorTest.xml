@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="net.greet.GreetTest" time="0.002" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="net.greet.CommandProcessorTest" time="0.383" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -58,7 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="ShouldGreetAUserInEnglishTest" classname="net.greet.GreetTest" time="0"/>
-  <testcase name="ShouldGreetAUserInXhosaTest" classname="net.greet.GreetTest" time="0"/>
-  <testcase name="ShouldGreetAUserInAfrikaansTest" classname="net.greet.GreetTest" time="0"/>
+  <testcase name="shouldPrinttheHelpInfo" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.008"/>
+  <testcase name="shouldReturntheCorrectNumberOfUsers" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.004"/>
+  <testcase name="shouldClearAllUsers" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.001"/>
+  <testcase name="shouldReturnAMapOfAllUsersGreeted" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.001"/>
+  <testcase name="shouldCountHowManyTimesHasOneUserBeenGreeted" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.001"/>
+  <testcase name="greetInDefaultLanguage" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0.001"/>
+  <testcase name="shouldClearOneUser" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0"/>
+  <testcase name="greetInAfrikaans" classname="net.greet.CommandProcessorTest$shouldGreetPerson" time="0"/>
 </testsuite>

@@ -51,7 +51,6 @@ public class GreetedUsingJDBC implements Greeted {
             while(rs.next()){
                 map.put(rs.getString("name"), rs.getInt("counter")) ;
             }
-            System.out.println(map);
             return map;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -65,7 +64,6 @@ public class GreetedUsingJDBC implements Greeted {
         try {
             psRemoveOneUser.setString(1, name);
             psRemoveOneUser.execute();
-            System.out.println("User deleted :-)");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -80,7 +78,6 @@ public class GreetedUsingJDBC implements Greeted {
                     Statement statement = conn.createStatement();
                     statement.addBatch("delete from users");
                     statement.executeBatch();
-                    System.out.println("Users deleted :-)");
 
             } catch(Exception ex) {
                 System.out.println("These test will fail until the users table is created: " + ex);
@@ -89,21 +86,19 @@ public class GreetedUsingJDBC implements Greeted {
        }
 
     public void greeted(String name) {
-        // find
-        // update or create
+
         try {
             findUserByName.setString(1, name.toLowerCase());
             ResultSet rsCreateUser = findUserByName.executeQuery();
 
             if(rsCreateUser.next() == false) {
-                //No user found
-                //create user/ insert
+
                 psCreateNewUsers.setString(1, name.toLowerCase());
                 psCreateNewUsers.setInt(2,1);
                 psCreateNewUsers.execute();
 
             } else {
-                //we update user count
+
                 psUpdateUsersCount.setString(1, name.toLowerCase());
                 psUpdateUsersCount.executeUpdate();
             }
@@ -122,7 +117,6 @@ public class GreetedUsingJDBC implements Greeted {
             ResultSet rs = findUserByName.executeQuery();
 
             if(rs.next()) {
-                //add user to map => {name=3}
                 map.put(rs.getString("name"), rs.getInt("counter"));
                 System.out.println(map);
 
@@ -140,10 +134,9 @@ public class GreetedUsingJDBC implements Greeted {
             psFindUsers.execute();
 
             ResultSet rs = psFindUsers.executeQuery();
-//        System.out.println("ResultSet: " + rs);
 
             while (rs.next()) {
-                //add user to map => {name=3, Unalo=2}
+
                 map.put(rs.getString("name"), rs.getInt("counter"));
             }
         } catch (SQLException e) {

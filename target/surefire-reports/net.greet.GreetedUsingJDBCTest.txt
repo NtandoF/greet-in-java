@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: net.greet.GreetedUsingJDBCTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.382 s <<< FAILURE! - in net.greet.GreetedUsingJDBCTest
-addDataUsersUsingPreparedStatement  Time elapsed: 0.299 s  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.34 s <<< FAILURE! - in net.greet.GreetedUsingJDBCTest
+addDataUsersUsingPreparedStatement  Time elapsed: 0.233 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 	at net.greet.GreetedUsingJDBCTest.addDataUsersUsingPreparedStatement(GreetedUsingJDBCTest.java:84)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
@@ -10,7 +10,7 @@ Table "USERS" not found; SQL statement:
 insert into users (name, counter) values (?, ?) [42102-199]
 	at net.greet.GreetedUsingJDBCTest.addDataUsersUsingPreparedStatement(GreetedUsingJDBCTest.java:55)
 
-shouldRemoveAllUsers  Time elapsed: 0.041 s  <<< ERROR!
+shouldRemoveAllUsers  Time elapsed: 0.038 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.GreetedUsingJDBCTest.shouldRemoveAllUsers(GreetedUsingJDBCTest.java:111)
 
@@ -18,11 +18,11 @@ shouldRemoveOneUsers  Time elapsed: 0.014 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.GreetedUsingJDBCTest.shouldRemoveOneUsers(GreetedUsingJDBCTest.java:124)
 
-shouldReturnTheCorrectNumOfUsersStored  Time elapsed: 0.007 s  <<< ERROR!
+shouldReturnTheCorrectNumOfUsersStored  Time elapsed: 0.014 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfUsersStored(GreetedUsingJDBCTest.java:94)
 
-shouldReturnTheCorrectNumOfOneUserStored  Time elapsed: 0.013 s  <<< ERROR!
+shouldReturnTheCorrectNumOfOneUserStored  Time elapsed: 0.029 s  <<< ERROR!
 java.lang.NullPointerException
 	at net.greet.GreetedUsingJDBCTest.shouldReturnTheCorrectNumOfOneUserStored(GreetedUsingJDBCTest.java:106)
 
