@@ -7,17 +7,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetTest {
 
         @Test
-      public void ShouldGreetAUserInEnglishTest() {
+      public void ShouldGreetAUserInEnglish() {
             Greet greet = new Greet("english", "ntando");
             assertEquals(greet.greetPerson(), "Hello ntando");
         }
     @Test
-    public void ShouldGreetAUserInXhosaTest() {
+    public void ShouldGreetAUserInXhosa() {
         Greet greet = new Greet("xhosa", "Ntando");
         assertEquals(greet.greetPerson(), "Molo ntando");
     }
     @Test
-    public void ShouldGreetAUserInAfrikaansTest() {
+    public void ShouldGreetAUserInAfrikaans() {
         Greet greet = new Greet("afrikaans", "ntando");
         assertEquals(greet.greetPerson(), "Goeie dag ntando");
     }

@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("******Welcome to the greetings app********");
 
-         Greeted inner = new GreetedUsingJDBC();
+         Greeted inner = new GreetedUsingMap();
 //        GreetedUsingJDBC inner = new GreetedUsingJDBC();
         CommandProcessor executer = new CommandProcessor(inner);
 

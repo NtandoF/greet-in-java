@@ -1,7 +1,7 @@
 package net.greet;
 import java.util.*;
 
-public class GreetedUsingMap {
+public class GreetedUsingMap implements Greeted {
     Map<String, Integer> greetedUsers=new HashMap<String, Integer>();
 
     public int count = 0;
@@ -10,7 +10,6 @@ public class GreetedUsingMap {
 
         if (greetedUsers.containsKey(name)) {
             greetedUsers.put(name, greetedUsers.get(name) + 1);
-            System.out.println(greetedUsers.isEmpty());
 
         }
         else {
@@ -69,10 +68,8 @@ public class GreetedUsingMap {
     }
 
 
-    public void greetedNames(){
-        System.out.println(greetedUsers);
-
-
+    public Map<String, Integer> greetedNames(){
+        return greetedUsers;
     }
 }
 

@@ -4,9 +4,8 @@ public class CommandExtractor {
 
     private final String[] commandParts;
     private String name;
-//    String [] commandParts;
     private String command;
-    public String lang;
+    private String lang;
 
 
     public CommandExtractor(String command) {
@@ -31,7 +30,7 @@ public class CommandExtractor {
 
     public String getLang() {
 
-        return LanguageType.valueOf(lang).getlanguage();
+        return lang;
     }
 
         public String getName(){
@@ -40,7 +39,7 @@ public class CommandExtractor {
     }
 
     public String greetPerson(){
-        return getLang() + " " + getName();
+        return LanguageType.valueOf(lang).getlanguage() + " " + getName();
 
     }
 
